@@ -162,3 +162,47 @@ footer {
     border: none;
     color: white;
   }
+
+/* blogs.html styling */
+.hero {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(20,20,20,0.8)), url('/assets/img/blog-bg.jpg') center/cover;
+    color: #fff;
+    cursor: help;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+.tooltip-inner a {
+    color: red !important; /* Makes the link red */
+    text-decoration: none; /* Optional: removes underline */
+  }
+  
+.tooltip-inner a:hover {
+    color: #ff0000; /* Optional: different color on hover */
+}
+
+.blog-post {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.blog-post h3 {
+    color: #e50914;
+}
+
+.blog-post p {
+    color: #ccc;
+}
