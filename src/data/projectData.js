@@ -11,7 +11,7 @@ const projectList = [
   {
     title: 'Login and User Creation',
     description: 'A simple web app with functional login and user creation function.',
-    image: '/images/login-user.png',
+    image: '/images/login-user.PNG',
     link: 'https://github.com/joseph-gmd/login-user-creation',
     buttonLabel: 'View Source Code',
     tech: ["HTML", "Bootstrap", "JavaScript", "PHP", "MySQL"]
@@ -19,7 +19,7 @@ const projectList = [
   {
     title: 'FYI Website',
     description: 'Another responsive FYI website built to promote myself with dark and light mode',
-    image: '/images/FYI-website.png',
+    image: '/images/FYI-website.PNG',
     link: 'https://github.com/joseph-gmd/jgd-portfolio',
     buttonLabel: 'View Source Code',
     tech: ["HTML", "Bootstrap", "JavaScript"]
