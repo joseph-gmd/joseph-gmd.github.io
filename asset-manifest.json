@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jgd-portfolio/static/css/main.1b46dc3a.css",
+    "main.js": "/jgd-portfolio/static/js/main.c040768a.js",
+    "index.html": "/jgd-portfolio/index.html",
+    "main.1b46dc3a.css.map": "/jgd-portfolio/static/css/main.1b46dc3a.css.map",
+    "main.c040768a.js.map": "/jgd-portfolio/static/js/main.c040768a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b46dc3a.css",
+    "static/js/main.c040768a.js"
+  ]
+}
