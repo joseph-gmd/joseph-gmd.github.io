@@ -269,3 +269,23 @@ window.addEventListener("scroll", () => {
   });
 });
 
+/* =========================
+   MOBILE GLASS NAV TOGGLE
+========================= */
+const mobileBurger = document.querySelector(".mobile-nav-toggle");
+const mobileIcons = document.querySelector(".mobile-icon-nav");
+
+if (mobileBurger) {
+  mobileBurger.addEventListener("click", () => {
+    mobileBurger.classList.toggle("active");
+    mobileIcons.classList.toggle("active");
+  });
+
+  // Close when clicking icon
+  mobileIcons.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      mobileBurger.classList.remove("active");
+      mobileIcons.classList.remove("active");
+    });
+  });
+}

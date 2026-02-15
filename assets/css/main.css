@@ -90,6 +90,148 @@ body{
   box-shadow: 0 0 15px var(--accent-glow);
 }
 
+/* =========================
+   MOBILE GLASS NAV SYSTEM
+========================= */
+
+/* =========================
+   GLASS BURGER BUTTON
+========================= */
+
+.mobile-nav-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  display: none; /* hidden by default */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+
+  cursor: pointer;
+  z-index: 2000;
+  transition: 0.35s ease;
+}
+
+/* Show burger only on mobile */
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .side-nav {
+    display: none !important;
+  }
+}
+
+/* Burger Lines */
+.mobile-nav-toggle span {
+  width: 22px;
+  height: 2px;
+  background: #a0a8b8;
+  border-radius: 2px;
+  transition: 0.4s ease;
+}
+
+/* Hover */
+.mobile-nav-toggle:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+
+.mobile-nav-toggle:hover span {
+  background: #fff;
+}
+
+/* Active */
+.mobile-nav-toggle.active {
+  border-color: var(--accent);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.mobile-nav-toggle.active span {
+  background: #fff;
+}
+
+/* Animate to X */
+.mobile-nav-toggle.active span:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 4px);
+}
+
+.mobile-nav-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-nav-toggle.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+}
+
+/* =========================
+   MOBILE GLASS ICON NAV
+========================= */
+
+.mobile-icon-nav {
+  position: fixed;
+  top: 90px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1500;
+}
+
+/* Individual Icons */
+.mobile-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #a0a8b8;
+  text-decoration: none;
+
+  transform: translateY(-20px) scale(0.85);
+  opacity: 0;
+  pointer-events: none;
+
+  transition: 0.4s ease;
+}
+
+/* Hover glow */
+.mobile-icon:hover {
+  color: #fff;
+  border-color: var(--accent);
+  box-shadow: 0 0 15px var(--accent-glow);
+}
+
+/* Show animation */
+.mobile-icon-nav.active .mobile-icon {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Stagger animation */
+.mobile-icon-nav.active .mobile-icon:nth-child(1) { transition-delay: 0.05s; }
+.mobile-icon-nav.active .mobile-icon:nth-child(2) { transition-delay: 0.1s; }
+.mobile-icon-nav.active .mobile-icon:nth-child(3) { transition-delay: 0.15s; }
+.mobile-icon-nav.active .mobile-icon:nth-child(4) { transition-delay: 0.2s; }
+.mobile-icon-nav.active .mobile-icon:nth-child(5) { transition-delay: 0.25s; }
+
 /* SOCIAL ICONS */
 .social-icons a{
     color:#a0a8b8;
