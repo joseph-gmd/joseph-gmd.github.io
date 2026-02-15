@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Joseph Gerard Diaz | Personal Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Joseph Gerard Diaz</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item">
+                  <a class="nav-link btn btn-outline-light rounded-5" href="#" data-bs-toggle="modal" 
+                    data-bs-target="#contactModal">Contact Me</a>
+                </li>                                 
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+    <div>
+        <h1>Hi, I'm <strong>Joseph Gerard Diaz</strong></h1>
+        <p>Let's create something awespiring together.</p>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="service-cards">
+    <div class="container text-center">
+        <h2>What I Do</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="assets/img/web-design.jpg" alt="Web Design" loading="lazy">
+                    <h3>Web Design</h3>
+                    <p>Beautiful, responsive, and user-friendly websites.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="assets/img/database.png" alt="Database Admin" loading="lazy">
+                    <h3>Database Admin</h3>
+                    <p>Manipulates and creates queries in MySQL and MS SQL databases</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card">
+                    <img src="assets/img/tech-support.jpg" alt="Tech Support" loading="lazy">
+                    <h3>Tech Support</h3>
+                    <p>Resolves technical issues and provides assistance with IT-related problems.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio-section">
+    <div class="container text-center">
+        <h2>My Work</h2>
+        <div class="row">
+            <div class="col-md-4 portfolio-item">
+                <a href="https://lipabankrb.com" target="_blank">
+                    <img src="assets/img/promotional-website.png" alt="Promotional Website" loading="lazy">
+                </a>
+                <div class="overlay">
+                    <h3>Promotional Website</h3>
+                    <p>Developed to promote the company's products and services.</p>
+                </div>
+            </div>            
+            <div class="col-md-4 portfolio-item">
+                <a href="#" target="_blank">
+                    <img src="assets/img/employee-portal.png" alt="Employee Portal" loading="lazy">
+                </a>
+                <div class="overlay">
+                    <h3>Employee Portal</h3>
+                    <p>A platform for employees to access internal resources and tools.</p>
+                </div>
+            </div>
+            
+            <div class="col-md-4 portfolio-item">
+                <a href="#" target="_blank">
+                    <img src="assets/img/coming-soon.jpg" alt="Coming Soon" loading="lazy">
+                </a>
+                <div class="overlay">
+                    <h3>Coming Soon</h3>
+                    <p>Your website can be the next one we create, contact me so we can get started!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h3 class="modal-title text-danger" id="contactModalLabel"><strong>Contact Me</strong></h3>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form id="contactForm">
+                <!-- Success message -->
+                <div id="formSuccess" class="alert alert-success d-none" role="alert">
+                  Message sent successfully! I'll get back to you soon!
+                </div>
+              
+                <div class="mb-3">
+                  <label for="nameInput" class="form-label">Name</label>
+                  <input type="text" name="name" id="nameInput" class="form-control bg-secondary text-white" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                  <label for="emailInput" class="form-label">Email</label>
+                  <input type="email" name="email" id="emailInput" class="form-control bg-secondary text-white" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="messageInput" class="form-label">Message</label>
+                  <textarea name="message" id="messageInput" class="form-control bg-secondary text-white" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="text-end">
+                  <button type="submit" class="btn btn-danger">Send Message</button>
+                </div>
+            </form>              
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; Joseph Gerard Diaz - Web Developer. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>

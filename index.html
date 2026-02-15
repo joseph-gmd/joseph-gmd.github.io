@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Portfolio Layout</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Custom CSS -->
+<link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark text-white overflow-x-hidden">
+
+<!-- SIDE ICON NAV -->
+<nav class="side-nav position-fixed top-50 translate-middle-y end-0 me-4 d-flex flex-column gap-3">
+
+    <a href="#" class="nav-icon">
+        <i class="fa-solid fa-house"></i>
+        <span class="nav-label">Home</span>
+    </a>
+    <a href="#about" class="nav-icon">
+        <i class="fa-regular fa-user"></i>
+        <span class="nav-label">About</span>
+
+    </a>
+    <a href="#career" class="nav-icon">
+        <i class="fa-regular fa-file"></i>
+        <span class="nav-label">Skills and Experience</span>
+    </a>
+    <a href="#portfolio" class="nav-icon">
+        <i class="fa-regular fa-image"></i>
+        <span class="nav-label">Portfolio</span>
+    </a>
+    <a href="#contact" class="nav-icon">
+        <i class="fa-regular fa-envelope"></i>
+        <span class="nav-label">Contact</span>
+    </a>
+
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero vh-100 position-relative">
+
+    <div class="container h-100 position-relative">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-6">
+
+                <h1 class="display-4 fw-bold">Joseph Gerard Diaz</h1>
+
+                <p class="fs-4 text-secondary">
+                    I'm <span id="typed-text"></span>
+                </p>
+
+                <div class="d-flex gap-3 mt-3 social-icons">
+
+                    <!-- Email -->
+                    <a href="mailto:josehgerarddiaz@gmail.com" target="_blank">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/joseph-gerard-diaz-b28039253/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <!-- Website -->
+                    <a href="https://joseph-gmd.github.io" target="_blank">
+                        <i class="fas fa-globe"></i>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about-dark py-5 position-relative">
+    <div class="container">
+
+        <!-- Title -->
+        <div class="text-center mb-5 reveal">
+            <h2 class="fw-bold text-white">About</h2>
+            <p class="text-secondary mt-3">
+                My expertise includes network administration, system maintenance, troubleshooting, and end-user support 
+                to ensure smooth and uninterrupted operations. <br> I also design and develop web-based systems that enhance 
+                workflows and strengthen digital presence.
+            </p>
+        </div>
+
+        <div class="row align-items-center">
+            <!-- Image -->
+            <div class="col-lg-4 mb-4 mb-lg-0 reveal">
+                <img src="assets/img/about.png"
+                    class="img-fluid rounded shadow-lg"
+                    alt="Profile">
+            </div>
+
+            <!-- Content -->
+            <div class="col-lg-8 reveal">
+                <h3 class="fw-bold text-white mb-3">
+                    IT Specialist
+                </h3>
+
+                <p class="fst-italic text-secondary">
+                    I am an IT Specialist dedicated to keeping systems secure, networks stable, and digital solutions efficient.
+                </p>
+
+                <div class="row">
+                <div class="col-md-6">
+                    <ul class="about-list">
+                        <li><i class="fa-solid fa-chevron-right"></i> <strong>Location:</strong> <span>Lipa City, Philippines</span></li>
+                        <li><i class="fa-solid fa-chevron-right"></i> <strong>Specialization:</strong> <span>IT Support & Networking</span></li>
+                        <li><i class="fa-solid fa-chevron-right"></i> <strong>Phone:</strong> <span>+63 997 433 4808</span></li>
+                        <li><i class="fa-solid fa-chevron-right"></i> <strong>Availability:</strong> <span>Freelance / Part-time</span></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                    <ul class="about-list">
+                        <li><i class="fa-solid fa-chevron-right"></i> <strong>Experience:</strong> <span>2+ Years</span></li>
+                        <li><i class="fa-solid fa-chevron-right"></i> <strong>Focus:</strong> <span>System Reliability</span></li>
+                        <li><i class="fa-solid fa-chevron-right"></i> <strong>Email:</strong> <span>josephgerarddiaz@gmail.com</span></li>
+                        <li><i class="fa-solid fa-chevron-right"></i> <strong>Status:</strong> <span>Open for Opportunities</span></li>
+                    </ul>
+                </div>
+                </div>
+
+                <p class="text-secondary mt-3">
+                    I combine infrastructure knowledge, web development skills, and database experience with MySQL to create reliable, efficient, and user-focused technology solutions.
+                </p>
+            </div>
+        </div>
+
+        <!-- COUNTERS -->
+        <div class="row text-center mt-5">
+            <div class="col-md-3 reveal">
+                <div class="about-stat">
+                <i class="fa-solid fa-desktop"></i>
+                <h3><span class="counter" data-target="90">0</span>+</h3>
+                <p>Users Supported</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 reveal">
+                <div class="about-stat">
+                <i class="fa-solid fa-code"></i>
+                <h3><span class="counter" data-target="25">0</span>+</h3>
+                <p>Projects Completed</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 reveal">
+                <div class="about-stat">
+                <i class="fa-solid fa-headset"></i>
+                <h3><span class="counter" data-target="600">0</span>+</h3>
+                <p>Tickets Resolved</p>
+                </div>
+            </div>
+
+            <div class="col-md-3 reveal">
+                <div class="about-stat">
+                <i class="fa-solid fa-network-wired"></i>
+                <h3 class="counter" data-target="5">0</h3>
+                <p>Networks Managed</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="career" class="career-dark py-5">
+    <div class="container">
+
+        <!-- TITLE -->
+        <div class="text-center mb-5 reveal">
+            <h2 class="fw-bold text-white">Skills & Experience</h2>
+            <p class="text-secondary">What I do and where I’ve been professionally</p>
+        </div>
+
+        <!-- TABS -->
+        <div class="career-tabs text-center mb-4">
+            <div class="nav nav-pills justify-content-center pill-group">
+
+                <button
+                class="nav-link active"
+                data-tab="skills"
+                type="button">
+                Skills & Expertise
+                </button>
+
+                <button
+                class="nav-link"
+                data-tab="experience"
+                type="button">
+                Experience & Education
+                </button>
+
+            </div>
+        </div>
+
+        <!-- CONTENT WRAPPER -->
+        <div class="tab-wrapper">
+
+            <!-- ================= SKILLS TAB ================= -->
+            <div class="tab-content active" id="skills">
+
+                <div class="row h-100">
+
+                    <!-- TECH SUPPORT -->
+                    <div class="col-lg-4 reveal">
+                        <h5 class="skill-category">IT Technical Support</h5>
+
+                        <div class="skill-bar">
+                            <div class="skill-title"><span>OS Troubleshooting</span><span>80%</span></div>
+                            <div class="bar"><div class="fill" data-width="80%"></div></div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-title"><span>Hardware Support</span><span>85%</span></div>
+                            <div class="bar"><div class="fill" data-width="85%"></div></div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-title"><span>Remote Support</span><span>80%</span></div>
+                            <div class="bar"><div class="fill" data-width="80%"></div></div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-title"><span>Ticketing Systems</span><span>75%</span></div>
+                            <div class="bar"><div class="fill" data-width="75%"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- NETWORK -->
+                    <div class="col-lg-4 reveal">
+                        <h5 class="skill-category">Network Administration</h5>
+
+                        <div class="skill-bar">
+                            <div class="skill-title"><span>Local Area Network</span><span>75%</span></div>
+                            <div class="bar"><div class="fill" data-width="75%"></div></div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-title"><span>Routers & Switches</span><span>70%</span></div>
+                            <div class="bar"><div class="fill" data-width="70%"></div></div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-title"><span>Firewall</span><span>70%</span></div>
+                            <div class="bar"><div class="fill" data-width="70%"></div></div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-title"><span>Network Security</span><span>65%</span></div>
+                            <div class="bar"><div class="fill" data-width="65%"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- WEB DEV -->
+                    <div class="col-lg-4 reveal">
+                        <h5 class="skill-category">Web Development</h5>
+
+                        <div class="skill-bar">
+                            <div class="skill-title"><span>HTML / CSS</span><span>80%</span></div>
+                            <div class="bar"><div class="fill" data-width="80%"></div></div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-title"><span>JavaScript</span><span>80%</span></div>
+                            <div class="bar"><div class="fill" data-width="80%"></div></div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-title"><span>PHP</span><span>75%</span></div>
+                            <div class="bar"><div class="fill" data-width="75%"></div></div>
+                        </div>
+
+                        <div class="skill-bar">
+                            <div class="skill-title"><span>MySQL</span><span>80%</span></div>
+                            <div class="bar"><div class="fill" data-width="80%"></div></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- ================= EXPERIENCE TAB ================= -->
+            <div class="tab-content" id="experience">
+
+                <div class="row">
+
+                    <!-- EXPERIENCE TIMELINE -->
+                    <div class="col-lg-4 reveal">
+                    <h5 class="section-title">Experience</h5>
+
+                        <div class="timeline">
+
+                            <div class="timeline-item">
+                                <span class="dot"></span>
+                                <h6>IT Associate II</h6>
+                                <span class="year">Jul 2025 – Present</span>
+                                <p class="org">Lipa Bank Inc.</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <span class="dot"></span>
+                                <h6>IT Associate I</h6>
+                                <span class="year">Nov 2024 – Jul 2025</span>
+                                <p class="org">Lipa Bank Inc.</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <span class="dot"></span>
+                                <h6>Relieving Teller</h6>
+                                <span class="year">Aug 2023 – Oct 2024</span>
+                                <p class="org">Lipa Bank Inc.</p>
+                            </div>
+
+                            <div class="timeline-item">
+                                <span class="dot"></span>
+                                <h6>IT Support Intern</h6>
+                                <span class="year">Feb 2023 – May 2023</span>
+                                <p class="org">Pilipinas Kyohritsu Inc.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- EDUCATION -->
+                    <div class="col-lg-4 reveal">
+                        <h5 class="section-title">Education</h5>
+
+                        <div class="timeline">
+
+                            <div class="timeline-item">
+                                <span class="dot"></span>
+                                <h6>Bachelor of Science in Information Technology - Major in Network Technology</h6>
+                                <span class="year">2019 – 2023</span>
+                                <p class="org">Batangas State University - Alangilan Campus</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CERTIFICATIONS -->
+                    <div class="col-lg-4 reveal">
+                        <h5 class="section-title">Certifications</h5>
+
+                        <ul class="cert-list">
+                            <li>
+                            <i class="fa-solid fa-chevron-right"></i>
+                                Operating Systems Basics
+                            </li>
+                            <li>
+                            <i class="fa-solid fa-chevron-right"></i>
+                                Computer Networking Basics
+                            </li>
+                            <li>
+                            <i class="fa-solid fa-chevron-right"></i>
+                                AWS Educate Web Builder
+                            </li>
+                            <li>
+                            <i class="fa-solid fa-chevron-right"></i>
+                                Google Technical Support Fundamentals
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="portfolio" class="portfolio-section py-5">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="text-white fw-semibold">Portfolio</h2>
+            <p class="text-secondary">
+                Selected works highlighting development, design, and creative solutions.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- ITEM -->
+            <div class="col-lg-4 col-md-6">
+                <a href="https://lipabankrb.com" target="_blank" class="portfolio-item">
+                <div class="portfolio-card">
+                    <img src="assets/img/lipabank.png" class="img-fluid rounded-4" alt="Lipa Bank Inc. Website" loading="lazy">
+                    <div class="glass-overlay">
+                        <h5 class="mb-1">Lipa Bank Inc. Website</h5>
+                        <p>A promotional website showcasing products, services, and company information.</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <!-- ITEM -->
+            <div class="col-lg-4 col-md-6">
+                <a href="projects/company/index.html" class="portfolio-item" target="_blank">
+                <div class="portfolio-card">
+                    <img src="assets/img/company.PNG" class="img-fluid rounded-4" alt="Company Website Template" loading="lazy">
+                    <div class="glass-overlay">
+                        <h5 class="mb-1">Company</h5>
+                        <p>One page minimalistic, promotional webpage template for companies.</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <!-- ITEM -->
+            <div class="col-lg-4 col-md-6">
+                <a href="projects/fyi/index.html" class="portfolio-item" target="_blank">
+                <div class="portfolio-card">
+                    <img src="assets/img/fyi.PNG" class="img-fluid rounded-4" alt="FYI Website Template" loading="lazy">
+                    <div class="glass-overlay">
+                        <h5 class="mb-1">FYI web page</h5>
+                        <p>Dark-themed, responsive webpage for self portfolio.</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <!-- ITEM -->
+            <div class="col-lg-4 col-md-6">
+                <a href="#portfolio" class="portfolio-item">
+                <div class="portfolio-card">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&q=80" class="img-fluid rounded-4" alt="Coming Soon" loading="lazy">
+                    <div class="glass-overlay">
+                        <h5 class="mb-1">Coming Soon</h5>
+                        <p>More designs to be added soon.</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="contact-premium py-5 position-relative overflow-hidden">
+    <div class="container position-relative">
+
+        <!-- Animated Background Glow -->
+        <div class="contact-glow"></div>
+
+        <!-- Title -->
+        <div class="text-center mb-5 reveal">
+            <h2 class="fw-bold text-white">Let’s Work Together</h2>
+            <p class="text-secondary">
+                Have a project in mind or need IT solutions? I’d love to hear from you.
+            </p>
+        </div>
+
+        <div class="row g-5 align-items-stretch">
+
+        <!-- LEFT: INFO CARD -->
+        <div class="col-lg-5 reveal">
+            <div class="premium-card contact-info-card h-100">
+
+            <h5 class="mb-4 text-white">Contact Information</h5>
+
+            <div class="premium-contact-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                    <span>Location</span>
+                    <p>Lipa City, Philippines</p>
+                </div>
+            </div>
+
+            <div class="premium-contact-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div>
+                    <span>Email</span>
+                    <p>josephgerarddiaz@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="premium-contact-item">
+                <i class="fa-solid fa-phone"></i>
+                <div>
+                    <span>Phone</span>
+                    <p>+63 997 433 4808</p>
+                </div>
+            </div>
+
+            <div class="divider-glow my-4"></div>
+
+            <p class="text-secondary small">
+                Available for freelance, part-time, and IT consulting opportunities.
+            </p>
+
+            </div>
+        </div>
+
+        <!-- RIGHT: FORM CARD -->
+        <div class="col-lg-7 reveal">
+            <div class="premium-card contact-form-card h-100">
+
+            <form id="contactForm">
+
+            <div class="row">
+                <div class="col-md-6 mb-4 floating-group">
+                <input type="text" id="nameInput" name="name" required>
+                <label>Your Name</label>
+                </div>
+
+                <div class="col-md-6 mb-4 floating-group">
+                <input type="email" id="emailInput" name="email" required>
+                <label>Your Email</label>
+                </div>
+            </div>
+
+            <div class="mb-4 floating-group">
+                <input type="text" id="subjectInput" name="subject" required>
+                <label>Subject</label>
+            </div>
+
+            <div class="mb-4 floating-group">
+                <textarea rows="5" id="messageInput" name="message" required></textarea>
+                <label>Your Message</label>
+            </div>
+
+            <!-- Success Message -->
+            <div id="formSuccess" class="form-success d-none">
+                <i class="fa-solid fa-circle-check"></i>
+                Message sent successfully!
+            </div>
+
+            <button type="submit" class="premium-btn">
+                <span>Send Message</span>
+            </button>
+
+            </form>
+
+            </div>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-premium py-5 position-relative overflow-hidden">
+    <div class="container position-relative">
+
+        <!-- Glow Effect -->
+        <div class="footer-glow"></div>
+
+        <div class="row gy-4 align-items-center">
+
+            <!-- Brand / About -->
+            <div class="col-lg-4">
+                <h5 class="fw-bold text-white mb-3">Joseph Gerard Diaz</h5>
+                <p class="text-secondary small">
+                    IT Specialist focused on system reliability, network stability,
+                    and modern web solutions. Delivering efficient and secure digital experiences.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-4">
+                <h6 class="footer-title mb-3">Quick Links</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#career">Skills & Experience</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Social / Contact -->
+            <div class="col-lg-4">
+                <h6 class="footer-title mb-3">Connect</h6>
+
+                <div class="footer-social d-flex gap-3 mb-3">
+                    <a href="mailto:josephgerarddiaz@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/joseph-gerard-diaz-b28039253/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://joseph-gmd.github.io" target="_blank"><i class="fas fa-globe"></i></a>
+                </div>
+
+                <p class="text-secondary small mb-0">
+                    Lipa City, Philippines <br>
+                    Available for freelance & IT consulting
+                </p>
+            </div>
+
+        </div>
+
+        <!-- Divider -->
+        <div class="footer-divider my-4"></div>
+
+        <!-- Bottom -->
+        <div class="text-center small text-secondary">
+            © <span id="year"></span> Joseph Gerard Diaz. All Rights Reserved.
+        </div>
+
+    </div>
+</footer>
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
